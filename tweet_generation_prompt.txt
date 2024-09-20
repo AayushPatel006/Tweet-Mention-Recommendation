@@ -1,0 +1,107 @@
+Cleanliness Issues
+
+- Imagine you are a person living on mumbai, you daily face clenliness issue in your city so write 100 tweets complaining to @mybmcSWM twitter handle.
+
+- Now write 100 tweets without mentioning the tags and the area information.
+
+- Now mention the area information in the tweet and give little detailed tweet.
+
+- Now generate tweets complaining about the health issue due to lack of cleanliness.
+
+- Generate some tweets and mention the tweets on the lines of 1) no space to walk due to garbage 2) roads left dirty after cleaning
+
+- Write tweets complaining the cleaning truck dirtying the clean road
+
+- Imagine you are a person living in a city and you want to complain about several different issues in the city to "Official Twitter Handle of Solid Waste Management". 
+
+	Create 100 tweets complaining about this issue, Note:
+		- the tweet should not contain any emoji.
+		- each tweet should describe the issue.
+		- do not mention the twitter id of the department in the tweet, do mention hashtags
+		- do not use indexes use bullet points
+		- the tweet should be specific complaining about specific issue
+
+- do not use indexes use bullet points
+
+- Imagine you are the person living in the city and raising the complain about lack of clenliness in some areas
+
+- Write tweets withould using the word clean
+
+- Now give tweets a little longer and do not use the word trash
+
+- Now give tweets a little longer and do not use the word trash. (do not use indexes use bullet points
+
+- Only create tweets complaining to the government about the public areas in the city
+
+
+Bus Problems
+
+- imagine you are a person living in mumbai and you frequently use bus transportation, write 100 tweets to @myBESTBus complaining about the issue
+
+- now give me a 100 tweets describing the issues of the bus in mumbai, in the tweet mention the area where the issue is
+
+- now write complaining about the issues in detail
+
+- write tweets suggesting the department how various issues can be solved
+
+- give suggestion as tweets in detail how can the issues be solved
+
+
+Railways
+
+- @grpmumbai is The Official handle of mumbai Railway Police Commissionerate.Not Monitored 24/7. In an emergency please Dial 1512. Imagine you are a person in mumbai commuting everyday to work using railways. Write 100 tweets to @grpmumbai complaining about several issues that you face 
+
+- Generating 100 tweets describing the issue also with the location information such as platform number, stations information and area
+
+- Now write tweets describing several incidents that a person encountered in train
+
+- Write 100 tweets suggesting the Mumbai railway department how the issues can be solved
+
+- generate generalised tweets that just complain about the issues
+
+
+Post Office
+
+- Generate 100 tweets to complain mumbai Foreign Post Office for the delayed parcels, misplaced, damaged, missing, etc. Also include some info and make it real
+
+- Now also add more details and location and give different tweets
+
+Traffic Police
+
+- Assume you are a Mumbaikar living in Mumbai and you daily commute to your office from home and vice versa using road transport only not railways or metro, also the tweet should be a little specific mentioning the area and the cause of the issue. List down 100 tweets that you would do to complain about the traffic in several areas in Mumbai
+
+- Make the tweets at least 40 words each
+
+- Make the tweet length restricted to 280 characters
+
+- Make longer tweets that have content in detail
+
+- Give me tweets without using the word ‘Mumbai’ and ‘Traffic’
+
+- Please mention the area where the issue is in the tweet
+
+- Please give me generalized tweets that contain some location information
+
+- Imagine you are a person living in mumbai and you face issues 100 tweets complain about several issues to @mtpheretohelp
+
+
+Bridge
+
+- Generate 100 tweets for bridge related issues faced by people during their travel
+
+- Continue with more tweets without repetition
+
+
+Police
+
+- generate generalised tweets that just complain about the police issues that are tweeted by users
+
+
+Road
+
+- Generate 100 tweets for road related issues faced by people during their travel
+
+
+Water
+
+- Imagine you are the person living in the mumbai city and facing problems related to water issues like no water, pipe break or impure water, etc
