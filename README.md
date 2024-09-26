@@ -121,11 +121,20 @@ Usage:
 For government entities to use the department portal:
 
 1. Navigate to the `department_portal/` directory.
-2. Install the required dependencies:
+2. Create a `.env` file with the following variables:
+      
+      ```bash
+      DB_USER=<mongoDB_username>
+      DB_USER_KEY=<mongoDB_password>
+      ```
+      
+3. Install the required dependencies:
+   
    ```bash
    pip install -r requirements.txt
    ```
-3. Start the portal server:
+4. Start the portal server:
+   
    ```bash
    streamlit run department_portal.py
    ```
