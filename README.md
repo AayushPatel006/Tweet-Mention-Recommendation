@@ -12,7 +12,6 @@ This project implements an intelligent mention recommendation system for X (form
   - [Browser Plugin Integration](#browser-plugin-integration)
   - [Government Portal Usage](#government-portal-usage)
 - [Authors](#authors)
-<!-- - [License](#license) -->
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -27,23 +26,30 @@ Our solution implements an intelligent mention recommendation system for X to st
 
 The system utilizes advanced natural language processing techniques, including a custom BERT model, to analyze tweet content and provide context-aware mention suggestions. Additionally, we've developed a browser plugin for real-time recommendations and a department portal for managing and responding to citizen concerns.
 
-This project not only facilitates more effective civic engagement but also provides valuable data insights for urban planning and resource allocation. By bridging the gap between social media communication and government action, we aim to create a more responsive and efficient system for addressing urban issues in Mumbai, with potential applications for other cities facing similar challenges.
-
 ## Features
 
-- Custom BERT model for tweet classification
-- Browser plugin for real-time mention suggestions
-- Department portal for managing and responding to citizen concerns
-- Location-aware recommendations
-- Actionable statement generation using Llama 2 model
+- Advanced tweet classification using a custom BERT model
+- Real-time mention suggestions via a user-friendly browser plugin
+- Comprehensive department portal for efficient management and response to citizen concerns
+- Intelligent location-aware recommendations for improved accuracy
+- AI-powered actionable statement generation leveraging the Llama 2 model
 
 ## Project Structure
 
-- `browser_plugin/`: Frontend and backend files for the X browser extension
-- `department_portal/`: Files for the department management portal
-- `datasets/`: CSV files for generated and actual data
-- `models/`: Jupyter notebook with traditional ML classification models and custom BERT model implementation
-- `tweet_generation_prompt.txt`: Prompts used for generating tweet dataset
+- `browser_plugin/`: Contains frontend and backend components for the X browser extension
+  - `frontend/`: User interface files for the browser plugin
+  - `backend/`: Server-side logic and API endpoints for the plugin
+- `department_portal/`: Implementation files for the government department management portal
+  - `config/`: Contains configuration files for database connection
+  - `model/`: Contains Jupyter notebook for generating actionable statements
+  - `department_portal.py`: Streamlit application for the department portal interface
+- `datasets/`: 
+  - `actual_collected_tweets/`: Contains 288 actual collected tweets
+  - `artificial_generated_data/`: Contains train and test CSV files
+- `models/`: 
+  - `traditional_classification_models.ipynb`: Jupyter notebook with baseline machine learning models
+  - `custom_bert_model.ipynb`: Implementation and training of the custom BERT model
+- `tweet_generation_prompt.txt`: Prompts used for generating synthetic tweet dataset
 
 ## Demo Videos
 
@@ -69,8 +75,14 @@ This project not only facilitates more effective civic engagement but also provi
 
 2. Download datasets from the `datasets/` directory.
 
-3. Set up the mongoDB database and configure environment variables:
-    - Create a `.env` file in the `department_portal/` directory with the following variables:
+### Browser Plugin Integration
+
+To integrate the X browser plugin:
+
+1. Ensure the backend is active:
+   - Set up the mongoDB database and configure environment variables:
+    - Create a `.env` file in the `backend/` directory with the following variables:
+      
       ```bash
       DB_USER=<mongoDB_username>
       DB_USER_KEY=<mongoDB_password>
@@ -78,12 +90,7 @@ This project not only facilitates more effective civic engagement but also provi
       OPEN_WEATHER_API=<open_weather_api_key>
       GEOAPIFY_API=<geoapify_api_key>
       ```
-
-### Browser Plugin Integration
-
-To integrate the X browser plugin:
-
-1. Ensure the backend is active:
+      
    - Navigate to the `models/` directory and run the custom_bert_model.ipynb file.
    - Create a `saved_model/` before running the ipynb file.
    - The `model.pth` file will be saved in the `saved_model/` directory.
@@ -97,11 +104,11 @@ To integrate the X browser plugin:
      python main.py
      ```
 
-2. Navigate to the `browser_plugin/` directory.
-3. Open your browser's extension management page (e.g., `chrome://extensions/` for Chrome).
-4. Enable "Developer mode".
-5. Click "Load unpacked" and select the `frontend/` directory.
-6. The plugin should now appear in your browser's toolbar.
+3. Navigate to the `browser_plugin/` directory.
+4. Open your browser's extension management page (e.g., `chrome://extensions/` for Chrome).
+5. Enable "Developer mode".
+6. Click "Load unpacked" and select the `frontend/` directory.
+7. The plugin should now appear in your browser's toolbar.
 
 Usage:
 - When composing a tweet on X, the plugin will automatically suggest relevant department mentions based on the content of your tweet.
