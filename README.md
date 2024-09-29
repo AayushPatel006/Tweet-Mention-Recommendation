@@ -1,5 +1,7 @@
 # Automatic Tweet Mention Recommendation in X for Reporting Civic Issues - Case Study based on Mumbai City, India
 
+This repository contains the code implementation for the paper "Automatic Tweet Mention Recommendation in X for Reporting Civic Issues - Case Study based on Mumbai City, India" by Aayush Patel, Chaitya Dobariya, Dayanand Ambawade, Dhawal Thakkar and P. Balamurugan, accepted by 10th IEEE INTERNATIONAL SMART CITIES CONFERENCE 2024.
+
 This project implements an intelligent mention recommendation system for X (formerly Twitter) to improve communication between citizens and government authorities regarding civic issues in Mumbai, India.
 
 ## Table of Contents
