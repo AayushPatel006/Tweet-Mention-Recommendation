@@ -16,7 +16,7 @@ This repository contains the code implementation for the paper "Automatic Tweet 
 
 ## Introduction
 
-This project implements an intelligent mention recommendation system for X (formerly Twitter) to improve communication between citizens and government authorities regarding civic issues in Mumbai, India. It addresses the challenge of efficient civic issue reporting in Mumbai, India by leveraging social media platforms, specifically X (formerly Twitter). The rapid growth of social media usage among citizens has created an opportunity for more direct and immediate communication between the public and government authorities. However, this increased communication volume also presents challenges in terms of proper routing and timely responses to citizen concerns.
+This project implements an intelligent mention recommendation system for X (formerly Twitter) to improve communication between citizens and government authorities regarding civic issues in Mumbai, India. The rapid growth of social media usage among citizens has created an opportunity for more direct and immediate communication between the public and government authorities. However, this increased communication volume also presents challenges in terms of proper routing and timely responses to citizen concerns.
 
 Our solution implements an intelligent mention recommendation system for X to streamline the process of reporting civic issues. By automatically suggesting relevant government department handles based on the content of a user's tweet, we aim to:
 
