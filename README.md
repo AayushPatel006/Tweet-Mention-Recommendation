@@ -9,9 +9,10 @@ This repository contains the code implementation for the paper "Automatic Tweet 
 - [Demo Videos](#demo-videos)
 - [Technologies Used](#technologies-used)
 - [Installation and Setup](#installation-and-setup)
+  - [Running Training Code](#running-training-code)
   - [Browser Plugin Integration](#browser-plugin-integration)
   - [Government Portal Usage](#government-portal-usage)
-- [Authors](#authors)
+  - [Dataset Collection for a New City](#dataset-collection-for-a-new-city)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -74,6 +75,22 @@ The system utilizes advanced natural language processing techniques, including a
    ```
 
 2. Download datasets from the `datasets/` directory.
+
+### Running Training Code
+
+1. **To train the custom BERT model:**
+    - Open the `models/custom_bert_model.ipynb` file.
+    - Ensure the required libraries are installed in your environment:
+      
+      ```bash
+      pip install torch transformers pandas scikit-learn
+      ```
+      
+    - This notebook contains the entire workflow for loading, preprocessing, and training the custom BERT model on the `artificial_generated_data/` dataset.
+    - Once training is complete, the model will be saved as `model.pth` in the `saved_model/` directory.
+
+2. **For baseline machine learning models:**
+    - Open the `traditional_classification_models.ipynb` notebook to run simpler models like Logistic Regression, SVM's, KNN, Naive Bayes, Decision Trees or Random Forests on the same dataset.
 
 ### Browser Plugin Integration
 
@@ -146,13 +163,28 @@ Usage:
 - Get actionable statements generated for the tweets with relevant department handles and for more details navigate to the actual tweet.
 - Access analytics and reports on civic issues trends.
 
-## Authors
+### Dataset Collection for a New City
 
-- Aayush Patel
-- Chaitya Dobariya
-- Dayanand Ambawade
-- Dhawal Thakkar
-- P. Balamurugan
+To deploy the system in a new city, follow these steps for dataset collection and adaptation:
+
+1. **Identify Departments:**
+    - Identify the government departments in the new city that are responsible for addressing civic issues such as road maintenance, water supply, waste management, traffic control, etc.
+    - Obtain the official social media handles (X accounts) for these departments. These handles will be used for mention recommendations.
+
+2. **Collecting Civic Issue Tweets:**
+    - Use the Twitter API to fetch tweets from the new city using relevant hashtags and keywords like `#RoadIssues`, `#WaterProblem`, `#Traffic`, etc.
+    - Modify the `tweet_generation_prompt.txt` file to include city-specific prompts for synthetic tweet generation.
+
+3. **Data Preprocessing:**
+    - Clean the collected tweets by removing unnecessary symbols and URLs.
+    - Annotate the dataset manually or automatically by assigning relevant departments (or labels) based on the issue type.
+
+4. **Adaptation for Location-Awareness:**
+    - Update the location-aware recommendation system by integrating the new city's geo-coordinates and relevant departments into the existing model.
+    - Update the city details in the code to ensure location suggestions are accurate.
+
+5. **Re-training the BERT Model:**
+    - Train the custom BERT model (`custom_bert_model.ipynb`) on the new city’s dataset to improve accuracy in mention suggestions.
 
 <!-- ## License
 
