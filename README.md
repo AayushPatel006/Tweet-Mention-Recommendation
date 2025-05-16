@@ -2,6 +2,8 @@
 
 This repository contains the code implementation for the paper "Automatic Tweet Mention Recommendation in X for Reporting Civic Issues - Case Study based on Mumbai City, India" by Aayush Patel, Chaitya Dobariya, Dayanand Ambawade, Dhawal Thakkar and P. Balamurugan, accepted by 10th IEEE INTERNATIONAL SMART CITIES CONFERENCE 2024.
 
+<img src="./TweetConnect-Project.png">
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
